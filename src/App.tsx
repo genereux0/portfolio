@@ -546,7 +546,7 @@ export default function App() {
           <motion.div 
             style={{ y: heroTextY, opacity: heroTextOpacity }}
           >
-            <span className="text-white/70 font-mono text-[12px] tracking-[0.2em] font-bold uppercase">
+            <span className="text-white/70 font-mono text-[16px] tracking-[0.2em] font-bold uppercase">
               프로덕트 디자이너, 황어진입니다
             </span>
           </motion.div>
