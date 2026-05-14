@@ -79,6 +79,7 @@ const PROJECTS = [
             ],
             title: "실시간 재고 모니터링 뷰", 
             desc: "핵심 데이터를 시각화하여, 수백 개의 재고 상태를 한눈에 보여줍니다.",
+            image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=1200",
             showMockup: true
           },
           { 
@@ -1238,20 +1239,39 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                         )}
 
                         {sol.title && (
-                          <motion.div 
-                            initial={{ opacity: 0, x: 20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            className="p-10 rounded-[48px] bg-purple-50 border border-purple-100 relative group"
-                          >
-                            <div className="space-y-4">
-                              <h4 className="text-xl font-bold text-slate-900 flex items-center gap-2">
-                                <span className="bg-purple-600 w-1.5 h-6 rounded-full" />
-                                {sol.title}
-                              </h4>
-                              <p className="text-slate-600 font-light leading-relaxed max-w-xl">{sol.desc}</p>
-                            </div>
-                          </motion.div>
+                          <div className="space-y-6">
+                            <motion.div 
+                              initial={{ opacity: 0, x: 20 }}
+                              whileInView={{ opacity: 1, x: 0 }}
+                              viewport={{ once: true }}
+                              className="p-10 rounded-[48px] bg-purple-50 border border-purple-100 relative group"
+                            >
+                              <div className="space-y-4">
+                                <h4 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+                                  <span className="bg-purple-600 w-1.5 h-6 rounded-full" />
+                                  {sol.title}
+                                </h4>
+                                <p className="text-slate-600 font-light leading-relaxed max-w-xl">{sol.desc}</p>
+                              </div>
+                            </motion.div>
+                            
+                            {sol.image && (
+                              <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.2 }}
+                                className="rounded-[40px] overflow-hidden border border-slate-100"
+                              >
+                                <img 
+                                  src={sol.image} 
+                                  alt={sol.title} 
+                                  className="w-full h-auto object-cover"
+                                  referrerPolicy="no-referrer"
+                                />
+                              </motion.div>
+                            )}
+                          </div>
                         )}
 
                         {/* Mockup removed */}
