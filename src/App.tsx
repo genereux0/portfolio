@@ -42,7 +42,7 @@ const PROJECTS = [
     client: "포스코 구매 DX",
     description: "재고 관리 과정을 분석해 데이터를 시각화한 모니터링 시스템으로 업무를 효율화하고, AI 자동 구매로 공장 운영 비용을 절감하는 시스템을 설계했습니다.",
     tags: ["현장 리서치 & 사용자 분석", "기존 운영 데이터 분석 & 인사이트 도출", "솔루션 & 기능 기획", "UX/UI 설계", "디자인 시스템으로 UI 제작"],
-    image: "/압연롤썸넬.png",
+    image: "https://raw.githubusercontent.com/genereux0/portfolio/99d023bf8bb28fa5584c72c08062c377366d8725/thum-roll.png",
     icon: <Monitor className="w-5 h-5" />,
     details: {
       role: "UX 리서치 / UX 기획 / UI 설계 총괄",
@@ -79,7 +79,7 @@ const PROJECTS = [
             ],
             title: "실시간 재고 모니터링 뷰", 
             desc: "핵심 데이터를 시각화하여, 수백 개의 재고 상태를 한눈에 보여줍니다.",
-            image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=1200",
+            image: "https://raw.githubusercontent.com/genereux0/portfolio/99d023bf8bb28fa5584c72c08062c377366d8725/roll_inforgraphic.png",
             showMockup: true
           },
           { 
@@ -114,12 +114,14 @@ const PROJECTS = [
           {
             title: "재고 핵심 데이터를 시각화한 모니터링 뷰",
             description: "곧 없어지는 압연롤을 빠르게 발견하고 대비 가능",
-            assetLabel: "High-Fidelity UI Presentation"
+            assetLabel: "High-Fidelity UI Presentation",
+            imageUrl: "https://raw.githubusercontent.com/genereux0/portfolio/99d023bf8bb28fa5584c72c08062c377366d8725/design_roll1.png"
           },
           {
             title: "AI를 활용한 자동 주문 시스템",
             description: "AI로 구매 수량과 시기를 더 빠르고 정확하게 산출합니다. 관리자는 결과 값을 검토하는 역할만 담당하게 되어, 업무 부담이 감소합니다.",
-            assetLabel: "Interactive Prototype Preview"
+            assetLabel: "Interactive Prototype Preview",
+            imageUrl: "https://raw.githubusercontent.com/genereux0/portfolio/99d023bf8bb28fa5584c72c08062c377366d8725/design_roll2.png"
           }
         ]
       }
@@ -131,7 +133,7 @@ const PROJECTS = [
     client: "포스코 구매 DX",
     description: "공장의 자재 구매 방식을 분석해, 과도한 선구매를 방지하는 구매 시스템을 구축하여 회사의 비용 손실을 줄였습니다.",
     tags: ["현장 리서치 & 사용자 분석", "인사이트 발굴", "솔루션 & 기능 기획", "UX/UI 설계", "디자인 시스템으로 UI 제작"],
-    image: "https://images.unsplash.com/photo-1504868584819-f8eecede5ec9?auto=format&fit=crop&q=80&w=1200",
+    image: "https://raw.githubusercontent.com/genereux0/portfolio/99d023bf8bb28fa5584c72c08062c377366d8725/thum_smart.png",
     icon: <Monitor className="w-5 h-5" />,
     details: {
       role: "UX 리서치/UX 기획/디자인 시스템 기반 UI 설계",
@@ -192,12 +194,14 @@ const PROJECTS = [
           {
             title: "통합 재고 지도",
             description: "사내 창고 · 사외 공급사 재고 수량을 위치로 보여주는 통합 재고 지도\n→ 필요한 재고가 어디에 얼마나 있는지 파악 후, 구매 결정",
-            assetLabel: "Integrated Inventory Map"
+            assetLabel: "Integrated Inventory Map",
+            imageUrl: "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/design_smart1.png"
           },
           {
             title: "요약 대시보드",
             description: "홈 화면에서 재고 규모를 즉시 파악할 수 있는 요약 대시보드",
-            assetLabel: "Summary Dashboard Overview"
+            assetLabel: "Summary Dashboard Overview",
+            imageUrl: "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/design_smart2.png"
           }
         ]
       }
@@ -209,7 +213,7 @@ const PROJECTS = [
     client: "신규 기능 기획 및 서비스 고도화",
     description: "거래 과정에서 발생하는 유저 행동 데이터를 활용하여 거래 전환율을 높이는 기능을 설계",
     tags: ["사용자 행동 분석 & 페인 포인트 발굴", "저니맵 설계", "데이터 인사이트 도출", "솔루션 & 기능 기획", "UX 설계", "UI 디자인"],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1200",
+    image: "https://raw.githubusercontent.com/genereux0/portfolio/99d023bf8bb28fa5584c72c08062c377366d8725/thum_carrot.png",
     icon: <Smartphone className="w-5 h-5" />,
     details: {
       role: "유저 저니맵 / 거래 데이터 & 인사이트 도출/UX기획/UI디자인",
@@ -220,15 +224,15 @@ const PROJECTS = [
         summary: "거래 과정에서 발생하는 유저 행동 데이터를 활용하여 거래 전환율을 높이는 신규 기능을 기획하고 서비스 고도화를 진행했습니다. 서비스에 축적된 DB를 활용하여 구현 리소스를 최적화하면서도 유저 소구력을 극대화했습니다.",
         problem: "판매글을 올려도 반응이 없어 답답합니다.\n결국 기다리다 지쳐, 헐값에 처분했어요.",
         problemImages: [
-          "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=1200",
-          "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&q=80&w=1200",
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200"
+          "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/voc1.png",
+          "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/voc2.png",
+          "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/voc3.png"
         ],
         problemQuote: "\"잦은 거래 지연과 가격 손실로 인한 이탈\"",
         improvementGoal: "신속한 판매 성공 경험 제공으로 서비스 만족도 향상",
         insightHeader: "거래 여정 분석",
         insightQuote: "판매자 · 구매자의 거래 여정 분석 → 거래 지연 원인 파악",
-        insightHeroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200",
+        insightHeroImage: "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/journey.png",
         insights: [
           { desc: "구매 결정에 필요한 핵심 정보가 판매글에 반영되지 못한다." },
           { desc: "구매자는 시세 파악이 충분히 되어야 구매를 결심한다." },
@@ -294,7 +298,7 @@ const PROJECTS = [
     client: "앱스토어 런칭 & 실제 사용자 대상 서비스 창업",
     description: "사용자 데이터 분석을 통해 숨겨진 니즈를 발굴하고 기능 업데이트를 통해 저조한 서비스 리텐션을 2.5배 이상 개선했습니다.",
     tags: ["서비스 구조 & 유저 플로우 설계", "UX/UI 설계", "디자인 시스템으로 UI 제작", "출시 & 서비스 개선", "데이터 인사이트 도출"],
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1200",
+    image: "https://raw.githubusercontent.com/genereux0/portfolio/99d023bf8bb28fa5584c72c08062c377366d8725/thum_photo.png",
     icon: <Smartphone className="w-5 h-5" />,
     details: {
       role: "데이터 분석 / 사용자 니즈 도출 / 기능 설계 / UX · UI 설계",
@@ -307,11 +311,11 @@ const PROJECTS = [
         initialModel: {
           title: "서비스 초기 모델",
           description: "초기 기획은 나중에 또 봐야하는 정보성 사진에 #태그를 달아,\n사진을 빠르게 찾아주는 서비스였습니다.",
-          image: "https://images.unsplash.com/photo-1542382257-80dedb725088?auto=format&fit=crop&q=80&w=1200"
+          image: "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/summary_photo.png"
         },
         problemQuote: "낮은 재사용률\n일회성 이용에 그친 서비스",
         problem: "6개월 서비스 운영 데이터 분석 결과, 핵심 기능의 리텐션이 매우 저조했습니다. 사용자가 재방문하지 않고 이탈하는 구조적 문제를 확인했습니다.",
-        problemImage: "https://images.unsplash.com/photo-1551288049-bbbda536ad3a?auto=format&fit=crop&q=80&w=1200",
+        problemImage: "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/problem_photo.png",
         improvementGoal: "일회성 유저에서 액티브 유저로 만들기\n단발성 방문을 막고 습관적 재방문을 위해, 사용자가 앱을 다시 찾을 강력한 기능을 설계하는 것을 목표로 설정했습니다.",
         analysisResults: {
           title: "370명 유저가 많이 입력한 태그 분석",
@@ -353,12 +357,14 @@ const PROJECTS = [
           {
             title: "사진 토너먼트 기능",
             description: "한 화면에서 즉시 비교할 수 있어, 선택에 걸리는 시간과 피로를 줄임\n→ 게임처럼 즐기며 고를 수 있게 개선",
-            assetLabel: "PHOTO TOURNAMENT UI"
+            assetLabel: "PHOTO TOURNAMENT UI",
+            imageUrl: "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/photo_design1.png"
           },
           {
             title: "5등급 좋아요 버튼",
             description: "등급순으로 사진 자동 정렬\n→ 선호도에 따른 체계적인 라이브러리 관리",
-            assetLabel: "5-LEVEL LIKE SYSTEM"
+            assetLabel: "5-LEVEL LIKE SYSTEM",
+            imageUrl: "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/photo_design2.png"
           }
         ],
         outcomes: [
@@ -366,13 +372,13 @@ const PROJECTS = [
             label: "01. Retention",
             value: "리텐션 2.5배 상승",
             desc: "신기능 배포 후, 6개월 운영 결과 태그 입력 기능의 리텐션 지표가 2.5배 상승했습니다. 사진 비교 기능을 활용하기 위해 태그를 더 적극적으로 입력하는 패턴이 형성되었습니다.",
-            image: "https://images.unsplash.com/photo-1551288049-bbbda536ad3a?auto=format&fit=crop&q=80&w=800"
+            image: "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/photo_retention.png"
           },
           {
             label: "02. Rankings",
             value: "앱스토어 인기 차트 79위",
             desc: "앱스토어 인기 차트 79위 달성을 통해 실제 사용자들의 긍정적인 반응과 서비스의 시장 경쟁력을 확인했습니다.",
-            image: "https://images.unsplash.com/photo-1512428559083-a401c338af45?auto=format&fit=crop&q=80&w=800"
+            image: "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/chart.png"
           }
         ]
       }
@@ -885,7 +891,7 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                        </p>
                         <div className="w-full md:w-[500px] h-72 md:h-80 rounded-3xl overflow-hidden border border-slate-100 bg-slate-50 shrink-0">
                            <img 
-                             src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=1200" 
+                             src="https://raw.githubusercontent.com/genereux0/portfolio/99d023bf8bb28fa5584c72c08062c377366d8725/roll_image.jpg" 
                              alt="Industrial Metal Production" 
                              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                              referrerPolicy="no-referrer"
@@ -954,7 +960,6 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             referrerPolicy="no-referrer"
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                         </motion.div>
                      )}
                      
@@ -1150,7 +1155,7 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                       className="rounded-[40px] overflow-hidden border border-slate-100"
                     >
                        <img 
-                         src="https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=1200" 
+                         src="https://raw.githubusercontent.com/genereux0/portfolio/99d023bf8bb28fa5584c72c08062c377366d8725/excel.png" 
                          alt="Legacy Excel Analysis" 
                          className="w-full h-auto"
                        />
@@ -1367,24 +1372,29 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                     {
                       title: "솔루션1",
                       description: "빠르게 팔린 판매글 데이터를 활용 → 매물별 판매 확률을 높이는 작성 가이드 제공",
-                      imagesCount: 2
+                      images: [
+                        "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/carrot_design1.png",
+                        "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/carrot_design2.png"
+                      ]
                     },
                     {
                       title: "솔루션2",
-                      description: "동네별 검색량 · 거래 완료 데이터로 → 안 팔리는 매물은 수요가 높은 지역에 노출"
+                      description: "동네별 검색량 · 거래 완료 데이터로 → 안 팔리는 매물은 수요가 높은 지역에 노출",
+                      images: ["https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/carrot_design3.png"]
                     },
                     {
                       title: "솔루션3",
-                      description: "실거래가 · 현재 호가 · 변동 가격 데이터를 시각화하여 → 시세를 한 눈에 보여줌으로써 구매 결심을 빨리 할 수 있도록"
+                      description: "실거래가 · 현재 호가 · 변동 가격 데이터를 시각화하여 → 시세를 한 눈에 보여줌으로써 구매 결심을 빨리 할 수 있도록",
+                      images: ["https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/carrot_design4.png"]
                     }
-                  ].map((showcase, index) => (
+                  ].map((showcase: any, index) => (
                     <div key={index} className="max-w-5xl mx-auto w-full space-y-12">
                       <div className="space-y-8">
                         <div className="flex items-center gap-4">
                            <span className="px-3 py-1 bg-purple-100 text-purple-600 text-[10px] font-black rounded-full tracking-widest uppercase">Solution 0{index + 1}</span>
                         </div>
                         <div className="text-slate-900 font-bold leading-tight max-w-4xl text-3xl md:text-4xl whitespace-pre-line tracking-tight">
-                          {showcase.description.split('→').map((part, i) => (
+                          {showcase.description.split('→').map((part: string, i: number) => (
                              i === 0 ? 
                              <p key={i} className="mb-6 opacity-60 text-2xl md:text-3xl font-medium">{part}</p> : 
                              <p key={i} className="text-purple-600 font-bold flex items-start gap-4">
@@ -1395,23 +1405,28 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                         </div>
                       </div>
                       
-                      <div className={showcase.imagesCount === 2 ? "flex flex-col gap-12 md:gap-24" : ""}>
-                        {[...Array(showcase.imagesCount || 1)].map((_, imgIndex) => (
+                      <div className={showcase.images?.length > 1 || showcase.imagesCount === 2 ? "flex flex-col gap-12 md:gap-24" : ""}>
+                        {showcase.images ? showcase.images.map((imgSrc: string, imgIndex: number) => (
                           <motion.div
                             key={imgIndex}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: imgIndex * 0.2 }}
-                            className="rounded-[64px] overflow-hidden bg-slate-50 border border-slate-100 relative group cursor-zoom-in w-screen relative left-1/2 -translate-x-1/2 md:w-full md:left-0 md:translate-x-0 aspect-video"
-                            onClick={() => setActiveShowcase(showcase)}
+                            className="rounded-[64px] overflow-hidden bg-slate-50 border border-slate-100 relative group w-screen relative left-1/2 -translate-x-1/2 md:w-full md:left-0 md:translate-x-0 aspect-video"
+                          >
+                            <img src={imgSrc} alt={`${showcase.title} detail ${imgIndex + 1}`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700" referrerPolicy="no-referrer" />
+                          </motion.div>
+                        )) : [...Array(showcase.imagesCount || 1)].map((_, imgIndex) => (
+                          <motion.div
+                            key={imgIndex}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: imgIndex * 0.2 }}
+                            className="rounded-[64px] overflow-hidden bg-slate-50 border border-slate-100 relative group w-screen relative left-1/2 -translate-x-1/2 md:w-full md:left-0 md:translate-x-0 aspect-video"
                           >
                             <div className="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-200/50" />
-                            <div className="absolute bottom-8 right-8 z-10">
-                              <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white/80 backdrop-blur border border-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                                 <Maximize2 className="w-5 h-5 md:w-6 md:h-6 text-slate-400 group-hover:text-purple-600 transition-colors" />
-                              </div>
-                            </div>
                           </motion.div>
                         ))}
                       </div>
@@ -1495,27 +1510,27 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                              initial={{ opacity: 0, y: 40 }}
                              whileInView={{ opacity: 1, y: 0 }}
                              viewport={{ once: true }}
-                             onClick={() => setActiveShowcase({ ...showcase, projectId: project.id })}
-                             className={`rounded-none overflow-hidden bg-slate-50 border border-slate-100 flex items-center justify-center relative group cursor-zoom-in ${[1, 2, 4].includes(project.id) ? `w-screen relative left-1/2 -translate-x-1/2 rounded-none md:rounded-none md:w-full md:left-0 md:translate-x-0 ${[1, 2, 4].includes(project.id) ? 'aspect-[1920/1080]' : 'aspect-[1920/400]'}` : 'aspect-[16/10] md:aspect-[16/8]'}`}
+                             className={`rounded-none overflow-hidden bg-slate-50 border border-slate-100 flex items-center justify-center relative group ${[1, 2, 4].includes(project.id) ? `w-screen relative left-1/2 -translate-x-1/2 rounded-none md:rounded-none md:w-full md:left-0 md:translate-x-0 ${[1, 2, 4].includes(project.id) ? 'aspect-[1920/1080]' : 'aspect-[1920/400]'}` : 'aspect-[16/10] md:aspect-[16/8]'}`}
                            >
-                          <div className="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-200/50" />
-                          <div className="relative z-10 flex flex-col items-center gap-8">
-                             <div className={`p-8 ${[1, 2, 4].includes(project.id) ? 'rounded-none' : 'rounded-[40px]'} bg-white/50 backdrop-blur-xl border border-white/20`}>
-                                <Monitor className="w-24 h-24 text-slate-300 group-hover:scale-110 transition-transform duration-700" />
-                             </div>
-                             <div className="flex flex-col items-center gap-2 text-center">
-                                <span className="text-[10px] font-mono text-slate-400 tracking-[0.6em] uppercase">{showcase.assetLabel}</span>
-                                <div className="w-8 h-px bg-slate-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700" />
-                             </div>
-                          </div>
+                          {showcase.imageUrl ? (
+                            <img src={showcase.imageUrl} alt={showcase.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700" referrerPolicy="no-referrer" />
+                          ) : (
+                            <>
+                              <div className="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-200/50" />
+                              <div className="relative z-10 flex flex-col items-center gap-8">
+                                 <div className={`p-8 ${[1, 2, 4].includes(project.id) ? 'rounded-none' : 'rounded-[40px]'} bg-white/50 backdrop-blur-xl border border-white/20`}>
+                                    <Monitor className="w-24 h-24 text-slate-300" />
+                                 </div>
+                                 <div className="flex flex-col items-center gap-2 text-center">
+                                    <span className="text-[10px] font-mono text-slate-400 tracking-[0.6em] uppercase">{showcase.assetLabel}</span>
+                                    <div className="w-8 h-px bg-slate-300" />
+                                 </div>
+                              </div>
+                            </>
+                          )}
                           
                            <div className={`absolute top-12 right-12 w-24 h-24 border-t border-r border-slate-300/30 ${[1, 2, 4].includes(project.id) ? 'rounded-none' : 'rounded-tr-3xl'}`} />
                            <div className={`absolute bottom-12 left-12 w-24 h-24 border-b border-l border-slate-300/30 ${[1, 2, 4].includes(project.id) ? 'rounded-none' : 'rounded-bl-3xl'}`} />
-
-                           <div className={`absolute bottom-8 right-8 px-6 py-4 ${[1, 2, 4].includes(project.id) ? 'rounded-none' : 'rounded-2xl'} bg-white/10 backdrop-blur-md border border-white/20 text-slate-400 group-hover:bg-white group-hover:text-purple-600 group-hover:scale-110 transition-all flex items-center gap-3`}>
-                             <span className="text-xs font-bold tracking-widest uppercase">View</span>
-                             <Maximize2 className="w-5 h-5" />
-                          </div>
                         </motion.div>
                      )}
                   </div>
@@ -1540,7 +1555,8 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                            onClick={() => setActiveShowcase({
                               title: "POSCO Design System (PDS)",
                               description: "철강 산업 특화 UI 컴포넌트와 가이드를 포함한 포스코 전사 디자인 시스템입니다. 일관된 사용자 경험과 업무 효율성을 위해 이를 엄격히 준수하여 설계되었습니다.",
-                              assetLabel: "PDS Core Components"
+                              assetLabel: "PDS Core Components",
+                              imageUrl: "https://raw.githubusercontent.com/genereux0/portfolio/82c22cfd9bde65c600d7d36d754c3a6ba12c011a/pds.png"
                            })}
                            className="absolute bottom-6 right-6 px-6 py-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white hover:text-purple-600 hover:scale-110 transition-all shadow-xl flex items-center gap-3 cursor-pointer group/btn z-20"
                         >
@@ -1667,28 +1683,32 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                onClick={(e) => e.stopPropagation()}
              >
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-slate-100" />
-                <div className="relative h-full flex flex-col items-center justify-center gap-12">
+                <div className="relative h-full flex flex-col items-center justify-center">
                    {activeShowcase.imageUrl ? (
-                     <div className="w-full h-full p-12 flex items-center justify-center">
+                     <div className="w-full h-full flex items-center justify-center">
                        <img 
                          src={activeShowcase.imageUrl} 
-                         className={`max-w-full max-h-full object-contain ${[1, 2, 4].includes(activeShowcase.projectId) ? 'rounded-none' : 'rounded-3xl'}`}
+                         className={`w-full h-full object-contain ${[1, 2, 4].includes(activeShowcase.projectId) ? 'rounded-none' : 'rounded-none'}`}
                          alt={activeShowcase.title}
                          referrerPolicy="no-referrer"
                        />
                      </div>
                    ) : (
-                     <div className="p-12 md:p-20 rounded-[48px] md:rounded-[64px] bg-white/50 backdrop-blur-md border border-white/40">
-                        <Monitor className="w-32 h-32 md:w-64 md:h-64 text-slate-100" />
-                     </div>
+                     <>
+                       <div className="flex-1 min-h-0 px-8 w-full flex items-center justify-center mt-12">
+                         <div className="p-12 md:p-20 rounded-[48px] md:rounded-[64px] bg-white/50 backdrop-blur-md border border-white/40 shadow-sm flex items-center justify-center">
+                            <Monitor className="w-24 h-24 md:w-48 md:h-48 text-slate-300" />
+                         </div>
+                       </div>
+                       <div className="flex flex-col items-center gap-2 text-center px-8 shrink-0 mb-8 md:mb-12">
+                          <h3 className="text-2xl font-display font-medium text-slate-900 tracking-tight">{activeShowcase.title}</h3>
+                          <p className="text-slate-500 font-light max-w-2xl text-sm">
+                             {activeShowcase.description}
+                          </p>
+                          <span className="text-[10px] uppercase tracking-widest text-slate-400 mt-2 block">Confidential Concept Layout • PDS Compliance</span>
+                       </div>
+                     </>
                    )}
-                   <div className="flex flex-col items-center gap-4 text-center px-8">
-                      <h3 className="text-2xl font-display font-medium text-slate-900 tracking-tight">{activeShowcase.title}</h3>
-                      <p className="text-slate-500 font-light max-w-2xl">
-                         {activeShowcase.description}<br />
-                         <span className="text-[10px] uppercase tracking-widest text-slate-400 mt-4 block">Confidential Concept Layout • PDS Compliance</span>
-                      </p>
-                   </div>
                 </div>
                 
                 {/* Close Button */}
