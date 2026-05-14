@@ -278,6 +278,11 @@ const PROJECTS = [
             label: "02. Implementation",
             value: "리소스 최적화",
             desc: "신규 데이터 수집이 아닌, 이미 서비스에 축적된 방대한 거래 완료 및 검색 데이터를 재활용하여 구현 난이도를 낮추고 데이터 신뢰도를 확보했습니다."
+          },
+          {
+            label: "03. Conversion",
+            value: "거래 전환율 18% 향상",
+            desc: "시세 정보 기반의 가격 조정 제안 기능을 통해, 정체되어 있던 매물의 거래 성사율을 기존 대비 18% 이상 높였습니다."
           }
         ]
       }
@@ -1163,12 +1168,12 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                           assetLabel: "JOURNEY ANALYSIS CHART",
                           imageUrl: story.insightHeroImage
                         })}
-                        className="rounded-[40px] overflow-hidden border border-slate-100 mb-4 cursor-zoom-in relative group/hero"
+                        className={`overflow-hidden border border-slate-100 mb-4 cursor-zoom-in relative group/hero ${project.id === 3 ? 'aspect-[1920/400] rounded-none' : 'rounded-[40px]'}`}
                       >
                          <img 
                            src={story.insightHeroImage} 
                            alt="Insight Hero" 
-                           className="w-full h-auto transition-transform duration-700 group-hover/hero:scale-105"
+                           className={`w-full ${project.id === 3 ? 'h-full object-cover' : 'h-auto'} transition-transform duration-700 group-hover/hero:scale-105`}
                            referrerPolicy="no-referrer"
                          />
                          <div className="absolute bottom-6 right-6 flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/90 backdrop-blur-md shadow-lg border border-slate-200/50 text-slate-800 font-medium text-sm transition-all duration-300 group-hover/hero:bg-white group-hover/hero:translate-y-[-4px]">
@@ -1460,7 +1465,7 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                 </div>
                 <div className={[1, 2, 4].includes(project.id) ? "space-y-32" : "space-y-40"}>
                    {story.designShowcases.map((showcase: any, index: number) => (
-                     <div key={index} className={`space-y-10 ${showcase.isSummary ? 'bg-purple-50 p-16 rounded-[48px] border border-purple-100 shadow-sm mt-20' : ''} ${[1, 2, 4].includes(project.id) ? 'max-w-7xl mx-auto w-full px-6 md:px-0' : ''}`}>
+                     <div key={index} className={`space-y-10 ${showcase.isSummary ? `bg-purple-50 p-16 ${[1, 2, 4].includes(project.id) ? 'rounded-none' : 'rounded-[48px]'} border border-purple-100 shadow-sm mt-20` : ''} ${[1, 2, 4].includes(project.id) ? 'max-w-7xl mx-auto w-full px-6 md:px-0' : ''}`}>
                         <div className="space-y-6">
                            {showcase.title && (
                              <h2 className={`${showcase.isSummary ? 'text-xl font-bold text-purple-600 uppercase tracking-widest flex items-center gap-3' : 'text-[32px] font-display font-bold text-slate-900'} leading-tight`}>
@@ -1490,12 +1495,12 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                              initial={{ opacity: 0, y: 40 }}
                              whileInView={{ opacity: 1, y: 0 }}
                              viewport={{ once: true }}
-                             onClick={() => setActiveShowcase(showcase)}
-                             className={`rounded-[64px] overflow-hidden bg-slate-50 border border-slate-100 flex items-center justify-center relative group cursor-zoom-in ${[1, 2, 4].includes(project.id) ? `w-screen relative left-1/2 -translate-x-1/2 rounded-none md:rounded-[80px] md:w-full md:left-0 md:translate-x-0 aspect-video ${project.id === 4 ? '' : 'md:aspect-[21/9]'}` : 'aspect-[16/10] md:aspect-[16/8]'}`}
+                             onClick={() => setActiveShowcase({ ...showcase, projectId: project.id })}
+                             className={`rounded-none overflow-hidden bg-slate-50 border border-slate-100 flex items-center justify-center relative group cursor-zoom-in ${[1, 2, 4].includes(project.id) ? `w-screen relative left-1/2 -translate-x-1/2 rounded-none md:rounded-none md:w-full md:left-0 md:translate-x-0 ${[1, 2, 4].includes(project.id) ? 'aspect-[1920/1080]' : 'aspect-[1920/400]'}` : 'aspect-[16/10] md:aspect-[16/8]'}`}
                            >
                           <div className="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-200/50" />
                           <div className="relative z-10 flex flex-col items-center gap-8">
-                             <div className="p-8 rounded-[40px] bg-white/50 backdrop-blur-xl border border-white/20">
+                             <div className={`p-8 ${[1, 2, 4].includes(project.id) ? 'rounded-none' : 'rounded-[40px]'} bg-white/50 backdrop-blur-xl border border-white/20`}>
                                 <Monitor className="w-24 h-24 text-slate-300 group-hover:scale-110 transition-transform duration-700" />
                              </div>
                              <div className="flex flex-col items-center gap-2 text-center">
@@ -1504,10 +1509,10 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                              </div>
                           </div>
                           
-                          <div className="absolute top-12 right-12 w-24 h-24 border-t border-r border-slate-300/30 rounded-tr-3xl" />
-                          <div className="absolute bottom-12 left-12 w-24 h-24 border-b border-l border-slate-300/30 rounded-bl-3xl" />
+                           <div className={`absolute top-12 right-12 w-24 h-24 border-t border-r border-slate-300/30 ${[1, 2, 4].includes(project.id) ? 'rounded-none' : 'rounded-tr-3xl'}`} />
+                           <div className={`absolute bottom-12 left-12 w-24 h-24 border-b border-l border-slate-300/30 ${[1, 2, 4].includes(project.id) ? 'rounded-none' : 'rounded-bl-3xl'}`} />
 
-                          <div className="absolute bottom-8 right-8 px-6 py-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-slate-400 group-hover:bg-white group-hover:text-purple-600 group-hover:scale-110 transition-all flex items-center gap-3">
+                           <div className={`absolute bottom-8 right-8 px-6 py-4 ${[1, 2, 4].includes(project.id) ? 'rounded-none' : 'rounded-2xl'} bg-white/10 backdrop-blur-md border border-white/20 text-slate-400 group-hover:bg-white group-hover:text-purple-600 group-hover:scale-110 transition-all flex items-center gap-3`}>
                              <span className="text-xs font-bold tracking-widest uppercase">View</span>
                              <Maximize2 className="w-5 h-5" />
                           </div>
@@ -1658,7 +1663,7 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                animate={{ scale: 1, opacity: 1 }}
                exit={{ scale: 0.9, opacity: 0 }}
                transition={{ type: "spring", damping: 25, stiffness: 200 }}
-               className="w-full max-w-6xl aspect-[16/10] bg-white rounded-[40px] md:rounded-[64px] overflow-hidden relative border border-white/20"
+               className={`w-full max-w-6xl aspect-[16/10] bg-white ${[1, 2, 4].includes(activeShowcase.projectId) ? 'rounded-none' : 'rounded-[40px] md:rounded-[64px]'} overflow-hidden relative border border-white/20`}
                onClick={(e) => e.stopPropagation()}
              >
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-slate-100" />
@@ -1667,7 +1672,7 @@ function ProjectDetail({ project, onClose }: { project: any, onClose: () => void
                      <div className="w-full h-full p-12 flex items-center justify-center">
                        <img 
                          src={activeShowcase.imageUrl} 
-                         className="max-w-full max-h-full object-contain rounded-3xl"
+                         className={`max-w-full max-h-full object-contain ${[1, 2, 4].includes(activeShowcase.projectId) ? 'rounded-none' : 'rounded-3xl'}`}
                          alt={activeShowcase.title}
                          referrerPolicy="no-referrer"
                        />
