@@ -567,7 +567,7 @@ export default function App() {
               >
                 <p className="text-white/80 text-xl md:text-2xl font-sans leading-relaxed">
                   <span className="text-white font-medium">31억 원의 비용 절감을 이끌어낸 실무 경험을 바탕으로</span><br />
-                  기업의 비즈니스 성과를 만드는 디자인을 합니다.
+                  기업의 비즈니스 성과를 위한 솔루션을 설계합니다.
                 </p>
               </motion.div>
             </div>
